@@ -3,54 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Control | Flash In Studios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Last Control - Flash In Games</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="vignette"></div>
-
-    <header>
-        <nav>
-            <div class="logo">FLASH<span>IN</span></div>
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="#home" id="nav-home">Giriş</a></li>
-                    <li><a href="#about" id="nav-about">Hikaye</a></li>
-                </ul>
-                <button id="lang-btn" class="lang-switcher">EN</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-company">FLASH IN</span>
+                <span class="logo-separator">|</span>
+                <span class="logo-game">LAST CONTROL</span>
             </div>
-        </nav>
-    </header>
+            <ul class="nav-menu">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#story">Hikaye</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#coming-soon">Yakında</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 id="main-title">LAST CONTROL</h1>
-                <p id="hero-sub">Karanlıkta kalan son kontrol sen misin?</p>
-                <div class="cta-group">
-                    <button class="btn primary" id="btn-trailer">FRAGMANI İZLE</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+            <div class="static-noise"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-text">Yakında Gelecek</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-word glitch" data-text="LAST">LAST</span>
+                <span class="title-word glitch" data-text="CONTROL">CONTROL</span>
+            </h1>
+            <p class="hero-subtitle">Son Kontrol Senin Elinde</p>
+            <p class="hero-tagline">Her seçim bir sonuç. Her sonuç bir bedel.</p>
+            <div class="hero-cta">
+                <button class="btn-primary">Şimdi İzle</button>
+                <button class="btn-secondary">Daha Fazla Bilgi</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Keşfet</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">Hikaye</span>
+            </h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p class="story-intro">
+                        <span class="highlight">2032</span> yılı. Dünya artık eskisi gibi değil.
+                    </p>
+                    <p>
+                        Derin bir korkunun gölgesinde kalmış bir dünyada, gerçeklik ve hayal arasındaki çizgi giderek belirsizleşiyor. <strong>Last Control</strong>, sizi hiç beklemediğiniz bir yolculuğa çıkarıyor.
+                    </p>
+                    <p>
+                        Oyun, kontrol merkezinin derinliklerinde geçiyor. Eski bir teknoloji araştırma tesisi, artık terk edilmiş ve unutulmuş. Ancak orada bir şey hala aktif. Bir şey sizi bekliyor.
+                    </p>
+                    <p>
+                        Oyuncu olarak, bu lanetli tesise girmek zorundasınız. Amacınız basit görünüyor: Tesisin merkezindeki kontrol odasına ulaşmak ve sistemi kapatmak. Ancak yolculuğunuz boyunca, geçmişte yapılan deneylerin izlerini keşfedecek ve her adımda daha derinlere çekileceksiniz.
+                    </p>
+                    <p class="story-warning">
+                        Burada her şey göründüğü gibi değil. Sesler kafanızın içinden geliyor mu, yoksa gerçekten orada mı? Aynaların ardında ne var? Karanlıkta saklanan şeyler size bakıyor mu?
+                    </p>
+                    <p>
+                        <strong>Last Control</strong>, sadece bir hayatta kalma oyunu değil. Bu, zihninizin ve gerçekliğinizin sınırlarını test edecek psikolojik bir korku deneyimi. Her kararınız önemli. Her seçimin bir sonucu var. Ve son kontrol tamamen sizde.
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <section id="about" class="content-section">
-            <h2 class="section-title" id="story-title">HİKAYE</h2>
-            <p class="description" id="story-desc">
-                Terk edilmiş bir araştırma tesisinde uyandığında, elinde sadece bozulmaya yüz tutmuş bir telsiz var. 
-                Sesler sana ne yapman gerektiğini söylüyor ama onlara güvenebilir misin? 
-                <strong>Last Control</strong>, Flash In'in sunduğu en derin psikolojik gerilim deneyimi.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="credits">
-            <p id="footer-credits">Emeği Geçenler</p>
-            <h3>ESAT • EMİR • MEB</h3>
         </div>
-        <p class="copyright">&copy; 2025 FLASH IN STUDIOS. All Rights Reserved.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">Özellikler</span>
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">Gerçekçi Atmosfer</h3>
+                    <p class="feature-description">Sinematik grafikler ve ses tasarımıyla sizi korku dolu bir dünyaya çeken atmosferik deneyim.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3 class="feature-title">Gizemli Bulmacalar</h3>
+                    <p class="feature-description">Zekanızı test edecek karmaşık bulmacalar ve tesisin sırlarını açığa çıkaracak ipuçları.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3 class="feature-title">Psikolojik Korku</h3>
+                    <p class="feature-description">Jump scare'lardan ziyade derin psikolojik gerilim ve zihinsel bir korku deneyimi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3 class="feature-title">Çoklu Sonlar</h3>
+                    <p class="feature-description">Her kararınızın önemli olduğu dallanan hikaye yapısı ve farklı sonlar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Keşif Temelli</h3>
+                    <p class="feature-description">Geniş ve ayrıntılı bir dünyada özgürce gezinti yapın ve hikayenin parçalarını bir araya getirin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💀</div>
+                    <h3 class="feature-title">Yoğun Gerilim</h3>
+                    <p class="feature-description">Her köşede sizi bekleyen tehlikeler ve sürekli gerilim altında kalacağınız anlar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section id="coming-soon" class="coming-soon">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">Yakında</span>
+            </h2>
+            <div class="coming-soon-content">
+                <div class="countdown-container">
+                    <p class="coming-soon-text">Last Control yakında sizlerle buluşacak</p>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Geliştirme Aşamasında</span>
+                    </div>
+                </div>
+                <div class="warning-box">
+                    <div class="warning-icon">⚠️</div>
+                    <div class="warning-content">
+                        <h4>Uyarı</h4>
+                        <p>Bu oyun yoğun korku öğeleri, psikolojik gerilim ve olgun içerik barındırır. 18+ yaş sınırı uygulanacaktır. Hassas izleyiciler için uygun değildir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-company">FLASH IN</h3>
+                    <p class="footer-tagline">Geleceğin Oyunlarını Şimdi Yaratıyoruz</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Oyun</h4>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#story">Hikaye</a></li>
+                            <li><a href="#features">Özellikler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Şirket</h4>
+                        <ul>
+                            <li><a href="#coming-soon">Hakkımızda</a></li>
+                            <li><a href="#coming-soon">İletişim</a></li>
+                            <li><a href="#coming-soon">Basın Kiti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flash In Games. Tüm hakları saklıdır.</p>
+                <p class="footer-disclaimer">Last Control bir Flash In Games ürünüdür.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
